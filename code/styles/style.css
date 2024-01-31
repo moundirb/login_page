@@ -3,11 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
+/* body {
   background-image: linear-gradient(to bottom ,#6F28B6, #AC59FF);
   background-repeat: no-repeat;
   
-}
+} */
 .box {
   width: 430px;
   height: 600px;

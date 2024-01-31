@@ -1,0 +1,152 @@
+/* ------backgound style -------- */
+
+body {
+  background: linear-gradient(180deg, #fbcdff 0%, #bacdff 100%);
+  height: 100vh;
+}
+/* --------nav-bar style ----------------- */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* z-index: 100; */
+}
+/* logo section  */
+header .logo-section {
+  display: flex;
+  width: auto;
+  align-items: center;
+  gap: 20px;
+}
+/* header .logo-section img {
+  height: 50px;
+  object-fit: fill;
+  background-color: transparent;
+} */
+.logo {
+  position: relative;
+}
+header .logo .left-circle-logo {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(circle at center, #7757f199 70%, #9747ff 100%);
+  border-radius: 50%;
+  z-index: 4;
+}
+header .logo .right-circle-logo {
+  position: relative;
+  margin-left: calc(-4.65px - 16px);
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: radial-gradient(circle at center, #5fffff80 50%, #0bf4f4 100%);
+  border-radius: 50%;
+  z-index: -2;
+}
+header .logo-section p {
+  font-size: 18px;
+}
+/* nav section  */
+header .nav-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+header .nav-section ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+header .nav-section ul li {
+  display: block;
+}
+/* cart section  */
+header .login-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  /* width: 300px; */
+}
+.login-section button {
+  background-color: #deb5fa;
+  box-shadow: 0px 4px 20px 0px #bbaffd;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 55px;
+  height: 34px;
+}
+.login-section button:hover {
+  background-color: black;
+  color: white;
+}
+.login-section a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  position: relative;
+}
+.login-section a::after {
+  width: 45px;
+  background-color: black;
+  height: 10px;
+}
+
+/* ----------------main style ---------------------  */
+.main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  /* align-items: center; */
+  /* padding-top: 50px */
+}
+.left-section {
+  width: 583px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.left-section h4 {
+  font-size: 70px;
+}
+.left-section p {
+  color: #068f8a;
+  font-size: 20px;
+}
+.left-section button {
+  background: #deb5fa;
+  color: #068f8a;
+  width: 230px;
+  height: 80px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0px 4px 20px 0px #9f71f8;
+  cursor: pointer;
+}
+.right-section {
+}
+.right-section .circle-image-container {
+  display: flex;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #ffffff 0%,
+    #78dcff 99.99%,
+    rgba(80, 234, 255, 0.7) 100%
+  );
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.right-section .circle-image-container img {
+  height: 525px;
+}

@@ -46,8 +46,12 @@
           </ul>
         </div>
         <div class="login-section">
-          <p><a href="">TRY FREE</a></p>
-          <div><button onclick="showLoginPopup()">LOGIN</button></div>
+          <button class="try" onclick="showRegisterPopup()">
+            <a>TRY FREE</a>
+          </button>
+          <div>
+            <button class="log" onclick="showLoginPopup()">LOGIN</button>
+          </div>
         </div>
       </header>
       <!-- end of header-->
@@ -55,66 +59,72 @@
       <div class="main">
         <!-- start left section  -->
         <!-- here u modify for login card  -->
+        <section class="left-section">
+          <!-- register card ------------------------------------------------------->
+          <section class="box" id="register-popup" style="display: none">
+            <p class="close" onclick="closePopup('register-popup')">&#10005;</p>
+            <p class="login">Register</p>
+            <div class="field">
+              <input class="name" type="text" placeholder="Name" />
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="field">
+              <input class="email" type="text" placeholder="Email" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="field">
+              <input class="password" type="text" placeholder="Password" />
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="" />
+              <span class="one">I agree to the terms & conditions</span>
+            </div>
+            <button class="login-button">register</button>
+            <p class="register">
+              You have an account?
+              <a href="#" onclick="showLoginPopup()">Login</a>
+            </p>
+          </section>
+          <!-- end of  register card ---------------------------------------- -->
 
-        <!-- register card ------------------------------------------------------->
-        <section class="box" id="register-popup" style="display: none">
-          <p class="close" onclick="closePopup('register-popup')">&#10005;</p>
-          <p class="login">Register</p>
-          <div class="field">
-            <input class="email" type="text" placeholder="Email" />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="field">
-            <input class="password" type="text" placeholder="Password" />
-            <i class="fa-solid fa-lock"></i>
-          </div>
-          <div class="check-box">
-            <input type="checkbox" id="" />
-            <span class="one">Agree</span>
-          </div>
-          <button class="login-button">register</button>
-          <p class="register">
-            You have an account?
-            <a href="#" onclick="showLoginPopup()">Login</a>
-          </p>
-        </section>
-        <!-- end of  register card ---------------------------------------- -->
+          <!-- login card --------------------------------------------->
 
-        <!-- login card --------------------------------------------->
-        <section class="box" id="login-popup" style="display: none">
-          <p class="close" onclick="closePopup('login-popup')">&#10005;</p>
-          <p class="login">Login</p>
-          <div class="field">
-            <input class="email" type="text" placeholder="Email" />
-            <i class="fa-solid fa-envelope"></i>
-          </div>
-          <div class="field">
-            <input class="password" type="text" placeholder="Password" />
-            <i class="fa-solid fa-lock"></i>
-          </div>
-          <div class="check-box">
-            <input type="checkbox" id="" />
-            <span class="one">Remember me</span>
-            <span class="two">Forgot Password?</span>
-          </div>
-          <button class="login-button">Login</button>
-          <p class="register">
-            Don't have an account?
-            <a href="#" onclick="showRegisterPopup()">Register</a>
-          </p>
-        </section>
-        <!-- end of login card -------------------------------------------->
+          <section class="box" id="login-popup" style="display: none">
+            <p class="close" onclick="closePopup('login-popup')">&#10005;</p>
+            <p class="login">Login</p>
+            <div class="field">
+              <input class="email" type="text" placeholder="Email" />
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="field">
+              <input class="password" type="text" placeholder="Password" />
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="" />
+              <span class="one">Remember me</span>
+              <span class="two">Forgot Password?</span>
+            </div>
+            <button class="login-button">Login</button>
+            <p class="register">
+              Don't have an account?
+              <a href="#" onclick="showRegisterPopup()">Register</a>
+            </p>
+          </section>
+          <!-- end of login card -------------------------------------------->
 
-        <section class="left-section" id="home-section">
-          <h4>
-            Join<br />
-            Our Global Team For Advanced Digital Solutions
-          </h4>
-          <p>
-            With V&X, discover global opportunities in digital marketing,
-            website development, and tech solutions!
-          </p>
-          <button onclick="showLoginPopup()">Get Started</button>
+          <section class="main-left-section" id="main-left">
+            <h4>
+              Join<br />
+              Our Global Team For Advanced Digital Solutions
+            </h4>
+            <p>
+              With V&X, discover global opportunities in digital marketing,
+              website development, and tech solutions!
+            </p>
+            <button onclick="showRegisterPopup()">Get Started</button>
+          </section>
         </section>
         <!-- end left section  -->
         <section class="right-section">

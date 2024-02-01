@@ -50,6 +50,7 @@ header .logo .right-circle-logo {
 }
 header .logo-section p {
   font-size: 18px;
+  font-weight: 700;
 }
 /* nav section  */
 header .nav-section {
@@ -71,7 +72,7 @@ header .nav-section ul li {
   position: relative;
   color: #333;
 }
-.nav-section ul li a::before {
+a::before {
   content: "";
   position: absolute;
   width: 0;
@@ -81,7 +82,7 @@ header .nav-section ul li {
   right: 0;
   transition: width 0.3s ease-in-out;
 }
-.nav-section ul li a:hover::before {
+a:hover::before {
   width: 100%;
 }
 /* cart section  */
@@ -93,7 +94,11 @@ header .login-section {
   gap: 35px;
   /* width: 300px; */
 }
-.login-section button {
+.login-section .try {
+  border: none;
+  background-color: transparent;
+}
+.login-section .log {
   background-color: #deb5fa;
   box-shadow: 0px 4px 20px 0px #bbaffd;
   border: 1px solid black;
@@ -101,7 +106,7 @@ header .login-section {
   width: 55px;
   height: 34px;
 }
-.login-section button:hover {
+.login-section .log:hover {
   background-color: black;
   color: white;
 }
@@ -119,27 +124,33 @@ header .login-section {
 
 /* ----------------main style ---------------------  */
 .main {
-  margin-top: 20px;
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   gap: 40px;
+  justify-content: space-between;
   /* align-items: center; */
   /* padding-top: 50px */
 }
 .left-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+}
+.main-left-section {
   width: 583px;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
 }
-.left-section h4 {
+.main-left-section h4 {
   font-size: 70px;
 }
-.left-section p {
+.main-left-section p {
   color: #068f8a;
   font-size: 20px;
 }
-.left-section button {
+.main-left-section button {
   background: #deb5fa;
   color: #068f8a;
   width: 230px;
